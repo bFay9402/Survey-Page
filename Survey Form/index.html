@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out our short survey</p>
+  </header> <!--end header-->
+
+  <div class="container">
+    <form action="" id="survey-form">
+      <div class="basic-info-group">
+        <label id="name-label" for="name">Name <input type="text" placeholder="Enter your name" id="name" required></label>
+        <label id="email-label" for="name">Email <input type="email" placeholder="Enter your Email" id="email" required></label>
+        <label id="number-label" for="age">Age (optional)<input type="number" placeholder="Age" name="age" id="number" min="1" max="100"></label>
+
+        <p>Which option best describes you?</p>
+        <select name="" id="dropdown">
+          <option disabled selected value>Choose an Option...</option>
+          <option value="parttime">Working Part Time</option>
+          <option value="fulltime">Working Full Time</option>
+          <option value="student">Student</option>
+          <option value="preferno">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="radiobtn-group">
+        <p>Choose your gender</p>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label><br>
+      </div>
+      <div class="checkbox-group">
+        <p>Select your hobbies</p>
+        <input type="checkbox" name="hobby" id="videogames" value="videogames">
+        <label for="videogames">Video Games</label><br>
+        <input type="checkbox" name="hobby" id="music" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" name="hobby" id="programming" value="programming">
+        <label for="programming">Programming</label><br>
+        <input type="checkbox" name="hobby" id="computers" value="computers">
+        <label for="programming">Computers</label><br>
+        <input type="checkbox" name="hobby" id="art" value="art">
+        <label for="programming">Art</label><br>
+        <input type="checkbox" name="hobby" id="film" value="film">
+        <label for="programming">Film</label><br>
+        <input type="checkbox" name="hobby" id="cooking" value="cooking">
+        <label for="programming">Cooking</label><br>
+        <input type="checkbox" name="hobby" id="reading" value="reading">
+        <label for="programming">Reading</label><br>
+        <input type="checkbox" name="hobby" id="writing" value="writing">
+        <label for="programming">Writing</label><br>
+        <input type="checkbox" name="hobby" id="learning" value="learning">
+        <label for="programming">Learning</label><br>
+        <input type="checkbox" name="hobby" id="somethingelse" value="somethingelse">
+        <label for="programming">Something else</label><br>
+      </div>
+      <p>Additional comments</p>
+      <textarea name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
+
+      <input id="submit" type="submit" value="Submit">
+    </form> <!--end form-->
+  </div> <!--end container-->
+</body>
+</html>
